@@ -21,6 +21,8 @@
 		FFB30191196EE496001FE814 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB30173196EE496001FE814 /* UIKit.framework */; };
 		FFB30199196EE496001FE814 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFB30197196EE496001FE814 /* InfoPlist.strings */; };
 		FFB3019B196EE496001FE814 /* CycleProgressViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB3019A196EE496001FE814 /* CycleProgressViewTests.m */; };
+		FFB301A7196EE4D8001FE814 /* MSCycleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB301A6196EE4D8001FE814 /* MSCycleProgressView.m */; };
+		FFB301A9196EE60E001FE814 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB301A8196EE60E001FE814 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		FFB30196196EE496001FE814 /* CycleProgressViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CycleProgressViewTests-Info.plist"; sourceTree = "<group>"; };
 		FFB30198196EE496001FE814 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FFB3019A196EE496001FE814 /* CycleProgressViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleProgressViewTests.m; sourceTree = "<group>"; };
+		FFB301A5196EE4D8001FE814 /* MSCycleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSCycleProgressView.h; path = MSCycleProgressView/MSCycleProgressView.h; sourceTree = "<group>"; };
+		FFB301A6196EE4D8001FE814 /* MSCycleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSCycleProgressView.m; path = MSCycleProgressView/MSCycleProgressView.m; sourceTree = "<group>"; };
+		FFB301A8196EE60E001FE814 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB301A9196EE60E001FE814 /* QuartzCore.framework in Frameworks */,
 				FFB30172196EE496001FE814 /* CoreGraphics.framework in Frameworks */,
 				FFB30174196EE496001FE814 /* UIKit.framework in Frameworks */,
 				FFB30170196EE496001FE814 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		FFB3016E196EE496001FE814 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FFB301A8196EE60E001FE814 /* QuartzCore.framework */,
 				FFB3016F196EE496001FE814 /* Foundation.framework */,
 				FFB30171196EE496001FE814 /* CoreGraphics.framework */,
 				FFB30173196EE496001FE814 /* UIKit.framework */,
@@ -112,6 +119,7 @@
 		FFB30175196EE496001FE814 /* CycleProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				FFB301A4196EE49F001FE814 /* MSCycleProgressView */,
 				FFB3017E196EE496001FE814 /* AppDelegate.h */,
 				FFB3017F196EE496001FE814 /* AppDelegate.m */,
 				FFB30181196EE496001FE814 /* Main.storyboard */,
@@ -150,6 +158,15 @@
 				FFB30197196EE496001FE814 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFB301A4196EE49F001FE814 /* MSCycleProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				FFB301A5196EE4D8001FE814 /* MSCycleProgressView.h */,
+				FFB301A6196EE4D8001FE814 /* MSCycleProgressView.m */,
+			);
+			name = MSCycleProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB301A7196EE4D8001FE814 /* MSCycleProgressView.m in Sources */,
 				FFB30186196EE496001FE814 /* ViewController.m in Sources */,
 				FFB30180196EE496001FE814 /* AppDelegate.m in Sources */,
 				FFB3017C196EE496001FE814 /* main.m in Sources */,
